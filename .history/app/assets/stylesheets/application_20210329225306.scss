@@ -1,0 +1,49 @@
+.boards {
+position: absolute;
+width: 56px;
+height: 25px;
+left: 30px;
+top: 17px;
+
+font-family: Avenir;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+
+color: #000000;
+
+}
+
+.notice {
+position: absolute;
+height: 36px;
+left: 0%;
+right: 49.73%;
+top: calc(50% - 36px/2);
+
+font-family: Avenir;
+font-style: normal;
+font-weight: 800;
+font-size: 26px;
+line-height: 36px;
+
+color: #000000;
+
+}
+
+line {
+
+position: absolute;
+width: 1920px;
+height: 1px;
+left: 0px;
+top: 58px;
+
+background: #000000;
+mix-blend-mode: normal;
+opacity: 0.1;
+
+}
+
+
