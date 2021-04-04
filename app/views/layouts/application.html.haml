@@ -9,6 +9,17 @@
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
     %meta{:content => "width=device-width,initial-scale=1.0", :name => "viewport"}/
   %body
+  %h3.boards TaskBoards
+  %hr.style1
+  %div.dropdown
+    = image_tag 'default-avatar2.png',class:'png dropbtn'
+    %div.dropdown-content
+      %ul
+        %li
+          = link_to 'ログイン' , new_user_session_path
+        %li
+          = link_to 'ログアウト' , destroy_user_session_path
+        %li 
+          = link_to 'ユーザー登録' , new_user_registration_path
     = yield
-    %p.notice= notice
-    %p.alert= alert
+  
