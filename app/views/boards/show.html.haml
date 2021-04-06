@@ -1,0 +1,14 @@
+%div.card
+  %div.title
+    = @board.title 
+  %div.content
+    = @board.content
+  %div.dropdown
+    = image_tag 'Combined Shape.png',class:'btn-png dropbtn'
+    %div.dropdown-content2
+      %ul
+        %li
+          = link_to 'EDIT' , destroy_user_session_path, data:{ method: 'delete' }
+        %li 
+          = link_to 'DELETE' , new_user_registration_path
+  = image_tag 'default-avatar2.png',class:'owner-png'

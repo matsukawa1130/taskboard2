@@ -289,6 +289,219 @@ background: url(app/assets/images/default-avatar2.png);
   font-size: 16px;
 }
 
+.card {
+  position: absolute;
+  width: 342px;
+  height: 161px;
+  left: 18px;
+  top: 165px;
+  
+  background: #F4F4F4;
+  border-radius: 10px;
+
+}
+
+.text {
+  position: absolute;
+  height: 25px;
+  left: 0%;
+  right: 80.79%;
+  top: calc(70% - 25px/2 - 12.5px);
+  
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.content {
+position: absolute;
+height: 19px;
+left: 0%;
+right: 0%;
+top: calc(50% - 19px/2 + 15.5px);
+
+font-family: Avenir;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+opacity: 0.4;
+
+}
+
+.btn-png {
+
+position: absolute;
+width: 24px;
+height: 6px;
+left: 302px;
+top: 10px;
+
+}
+
+.board-btn {
+
+position: relative;
+display: inline-block;
+
+}
+
+.board-edit {
+  font-family: Avenir;
+  display: none;
+  right: -367px;
+  top:80px;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  height:auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.board-edit a {
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+  
+.board-edit a:hover {
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn2 {
+  border: none;
+
+}
+
+.dropdown-content2 {
+  font-family: Avenir;
+  display: none;
+  right: -367px;
+  top:30px;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  height:auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content2 a {
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+  
+.dropdown-content2 a:hover {
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content2 {
+  display: block;
+}
+
+.title {
+  position: absolute;
+  height: 25px;
+  left: 5%;
+  right: 76.79%;
+  top: calc(35% - 25px/2 - 12.5px);
+  
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+  
+  
+  color: #000000;
+
+}
+
+.content {
+  position: absolute;
+  height: 19px;
+  left: 5%;
+  right: 0%;
+  top: calc(30% - 19px/2 + 15.5px);
+  
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  
+  color: #000000;
+  
+  mix-blend-mode: normal;
+  opacity: 0.4;
+
+}
+
+.owner-png {
+
+position: absolute;
+width: 30px;
+height: 30px;
+left: 20px;
+top: 112px;
+border-radius: 999px;
+
+}
+
+.add-card {
+position: absolute;
+width: 342px;
+height: 160px;
+left: 18px;
+top: 348px;
+
+background: #FFFFFF;
+border: 1px dashed rgba(0, 0, 0, 0.2);
+border-radius: 10px;
+
+}
+
+.add-text {
+position: absolute;
+height: 25px;
+left: 0.35%;
+right: 0.35%;
+top: calc(50% - 25px/2);
+
+font-family: Avenir;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+
+text-align: center;
+
+color: #000000;
+  
+}
+
+.add-text a {
+text-decoration: none;
+color:#000000;
+
+}
 
 
 
