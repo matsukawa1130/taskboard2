@@ -1,4 +1,4 @@
-%h2.notice All Boards
+%h2.notice2 All Boards
 - @boards.each do |board|
   = link_to board_path(board) do
     %div.card
@@ -18,7 +18,7 @@
 
 %div.add-card
   %p.add-text 
-    = link_to '+ Add new board' , new_user_registration_path
+    = link_to '+ Add new board' , new_board_path
 
 
 
