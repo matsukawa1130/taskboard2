@@ -8,7 +8,7 @@
     %div.dropdown-content2
       %ul
         %li
-          = link_to 'Edit' , destroy_user_session_path, data:{ method: 'delete' }
+          = link_to 'Edit' , edit_board_path(@board)
         %li 
-          = link_to 'Delete' , new_user_registration_path
+          = link_to 'Delete' , board_path(@board),data: { method: 'delete', confirm: '本当に削除してもよろしいですか'}
   = image_tag 'default-avatar2.png',class:'owner-png'
