@@ -15,7 +15,7 @@ color: #000000;
 
 }
 
-.notice {
+.notice2 {
 position: absolute;
 height: 36px;
 width:300px;
@@ -397,6 +397,7 @@ display: inline-block;
   height:auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border-radius: 10px;
 }
 
 .dropdown-content2 a {
@@ -418,6 +419,7 @@ display: inline-block;
   position: absolute;
   height: 25px;
   left: 5%;
+  width:100%;
   right: 76.79%;
   top: calc(35% - 25px/2 - 12.5px);
   
@@ -437,6 +439,7 @@ display: inline-block;
   position: absolute;
   height: 19px;
   left: 5%;
+  width:100%;
   right: 0%;
   top: calc(30% - 19px/2 + 15.5px);
   
@@ -501,6 +504,125 @@ color: #000000;
 text-decoration: none;
 color:#000000;
 
+}
+
+.container {
+
+}
+
+.name-box {
+  position: absolute;
+  width: 322px;
+  height: 40px;
+  left: 26px;
+  top: 190px;
+  
+  background: #F4F4F4;
+  border-radius: 10px;
+  border:none;
+
+}
+
+.desc-box {
+  position: absolute;
+  width: 322px;
+  height: 203px;
+  left: 26px;
+  top: 296px;
+  
+  background: #F4F4F4;
+  border-radius: 10px;
+  border:none;
+
+}
+
+.label-name {
+  position: absolute;
+  width: 49px;
+  height: 25px;
+  left: 26px;
+  top: 157px;
+  
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+  
+  
+  color: #000000;
+
+
+}
+
+.label-desc {
+  position: absolute;
+  width: 92px;
+  height: 25px;
+  left: 26px;
+  top: 263px;
+  
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+  
+  
+  color: #000000;
+
+}
+
+.flash {
+  position: fixed;
+  top: 16px;
+  font-size: 12px;
+  right: 16px;
+  width: 160px;
+  background: white;
+  -webkit-animation: fade-in-out;
+  animation: fade-in-out;
+  visibility: hidden;
+  z-index: 1;
+  padding: 16px;
+  animation-duration: 5s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+@-webkit-keyframes fade-in-out {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  50% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in-out {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  50% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
 
