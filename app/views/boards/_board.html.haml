@@ -3,6 +3,12 @@
     = board.title 
   %div.content
     = board.content
+  %p.post Posted
+  %div.time
+    = board.display_created_at
+  %p.update Updated
+  %div.time2
+    = board.display_updated_at
   %div.dropdown
     = image_tag 'Combined Shape.png',class:'btn-png dropbtn'
     %div.dropdown-content2

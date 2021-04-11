@@ -3,7 +3,7 @@ position: absolute;
 width: 56px;
 height: 25px;
 left: 40px;
-top: 22px;
+top: 23px;
 
 font-family: Avenir;
 font-style: normal;
@@ -21,7 +21,7 @@ height: 36px;
 width:300px;
 left: 26px;
 right: 0%;
-top: calc(14% - 36px/2);
+top: calc(12% - 36px/2);
 
 font-family: Avenir;
 font-style: normal;
@@ -277,10 +277,11 @@ background: url(app/assets/images/default-avatar2.png);
   position: relative;
   width: 60px;
   height: 60px;
-  left: 300px;
+  left: 280px;
   top: 20px;
+  padding:10px;
 
-  background: green;
+  background: 	#8AC75A;
   border-radius: 4px;
   border: none;
 
@@ -290,12 +291,12 @@ background: url(app/assets/images/default-avatar2.png);
 }
 
 .card {
-  position: absolute;
+  position: relative;
   width: 342px;
   height: 161px;
   left: 18px;
-  top: 165px;
-  
+  top: 105px;
+  margin-bottom:10px;
   background: #F4F4F4;
   border-radius: 10px;
 
@@ -468,16 +469,14 @@ border-radius: 999px;
 }
 
 .add-card {
-position: absolute;
+position: relative;
 width: 342px;
-height: 160px;
+height: 150px;
 left: 18px;
-top: 348px;
-
+top: 110px;
 background: #FFFFFF;
 border: 1px dashed rgba(0, 0, 0, 0.2);
 border-radius: 10px;
-
 }
 
 .add-text {
@@ -633,5 +632,88 @@ left: 5px;
 top: 13px;
 }
 
+.time {
+
+position: absolute;
+height: 19px;
+left:80px;
+right: 0%;
+top: calc(42% - 19px/2 + 15.5px);
+
+font-family: Avenir;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+opacity: 0.4;
+
+}
+
+.time2 {
+
+  position: absolute;
+  height: 19px;
+  left:80px;
+  right: 0%;
+  top: calc(50% - 19px/2 + 15.5px);
+  
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  
+  color: #000000;
+  
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  
+  }
+
+  .post {
+    position: absolute;
+    height: 19px;
+    left:17px;
+    right: 0%;
+    top: calc(42% - 19px/2 + 15.5px);
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    
+    color: #000000;
+    
+    mix-blend-mode: normal;
+    opacity: 0.4;
+  
+  }
+
+
+  .update {
+
+    position: absolute;
+    height: 19px;
+    left:17px;
+    right: 0%;
+    top: calc(50% - 19px/2 + 15.5px);
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    
+    color: #000000;
+    
+    mix-blend-mode: normal;
+    opacity: 0.4;
+
+  }
 
 
