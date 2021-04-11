@@ -2,7 +2,7 @@
 position: absolute;
 width: 56px;
 height: 25px;
-left: 26px;
+left: 40px;
 top: 5px;
 
 font-family: Avenir;
@@ -623,6 +623,14 @@ color:#000000;
     visibility: hidden;
     opacity: 0;
   }
+}
+
+.back-btn {
+position: absolute;
+width: 15px;
+height: 15px;
+left: 5px;
+top: 13px;
 }
 
 
