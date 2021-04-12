@@ -1,15 +1,21 @@
 %div.card
+  - if board.user.present?
+    %p.mark @
+    %div.username
+      = board.user.display_name
   %div.title
     = board.title 
   %div.content
     = board.content
-  %p.post Posted
+  %p.post Post
   %div.time
     = board.display_created_at
-  %p.update Updated
+  %p.update Update
   %div.time2
     = board.display_updated_at
-  %div.dropdown
+  = image_tag 'prof-avatar.png',class:'owner-png'
+- if user_signed_in? && current_user.has_written?(board)
+  %div.dropdown 
     = image_tag 'Combined Shape.png',class:'btn-png dropbtn'
     %div.dropdown-content2
       %ul
@@ -17,4 +23,3 @@
           = link_to 'Edit' , edit_board_path(board)
         %li 
           = link_to 'Delete' , board_path(board),data: { method: 'delete', confirm: '本当に削除してもよろしいですか'}
-  = image_tag 'default-avatar2.png',class:'owner-png'
