@@ -40,6 +40,7 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'rubocop-rails',require:false
   gem 'rubocop' ,require:false
+  gem 'faker'
 end
 
 group :development do

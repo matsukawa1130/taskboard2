@@ -2,7 +2,7 @@
 position: absolute;
 width: 56px;
 height: 25px;
-left: 40px;
+left: 25px;
 top: 23px;
 
 font-family: Avenir;
@@ -343,7 +343,7 @@ opacity: 0.4;
   height: 19px;
   left: 30px;
   right: 0%;
-  top: calc(42% - 19px/2 + 15.5px);
+  top: calc(52% - 19px/2 + 15.5px);
   
   font-family: Avenir;
   font-style: normal;
@@ -363,8 +363,8 @@ opacity: 0.4;
 position: relative;
 width: 24px;
 height: 6px;
-left: 302px;
-top: -50px;
+left: 312px;
+top: -60px;
 
 }
 
@@ -411,11 +411,11 @@ display: inline-block;
 .dropdown-content2 {
   font-family: Avenir;
   display: none;
-  right: -327px;
+  right: -307px;
   top:-20px;
   position: absolute;
   background-color: white;
-  min-width: 120px;
+  min-width: 90px;
   height:auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -720,7 +720,7 @@ opacity: 0.4;
     height: 19px;
     left:17px;
     right: 0%;
-    top: calc(42% - 19px/2 + 15.5px);
+    top: calc(52% - 19px/2 + 15.5px);
     
     font-family: Avenir;
     font-style: normal;
