@@ -2,8 +2,8 @@
 position: absolute;
 width: 56px;
 height: 25px;
-left: 26px;
-top: 5px;
+left: 25px;
+top: 23px;
 
 font-family: Avenir;
 font-style: normal;
@@ -21,7 +21,7 @@ height: 36px;
 width:300px;
 left: 26px;
 right: 0%;
-top: calc(14% - 36px/2);
+top: calc(12% - 36px/2);
 
 font-family: Avenir;
 font-style: normal;
@@ -79,7 +79,7 @@ border:none;
 
 .password {
 position: absolute;
-width: 76px;
+width: 120px;
 height: 25px;
 left: 26px;
 top: 253px;
@@ -217,7 +217,8 @@ height: 40px;
 left: 312px;
 top: 12px;
 border-radius: 999px;
-background: url(app/assets/images/default-avatar2.png);
+background: url(app/assets/images/prof-avatar.png);
+border-color: none;
 
 }
 
@@ -237,7 +238,7 @@ background: url(app/assets/images/default-avatar2.png);
   top:60px;
   position: absolute;
   background-color: white;
-  min-width: 160px;
+  min-width: 120px;
   height:auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -277,10 +278,11 @@ background: url(app/assets/images/default-avatar2.png);
   position: relative;
   width: 60px;
   height: 60px;
-  left: 300px;
+  left: 280px;
   top: 20px;
+  padding:10px;
 
-  background: green;
+  background: 	#8AC75A;
   border-radius: 4px;
   border: none;
 
@@ -290,12 +292,12 @@ background: url(app/assets/images/default-avatar2.png);
 }
 
 .card {
-  position: absolute;
+  position: relative;
   width: 342px;
   height: 161px;
   left: 18px;
-  top: 165px;
-  
+  top: 105px;
+  margin-bottom:20px;
   background: #F4F4F4;
   border-radius: 10px;
 
@@ -336,13 +338,33 @@ opacity: 0.4;
 
 }
 
+.username {
+  position: absolute;
+  height: 19px;
+  left: 30px;
+  right: 0%;
+  top: calc(52% - 19px/2 + 15.5px);
+  
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  
+  color: #000000;
+  
+  mix-blend-mode: normal;
+  opacity: 0.4;
+
+}
+
 .btn-png {
 
-position: absolute;
+position: relative;
 width: 24px;
 height: 6px;
-left: 302px;
-top: 10px;
+left: 312px;
+top: -60px;
 
 }
 
@@ -389,11 +411,11 @@ display: inline-block;
 .dropdown-content2 {
   font-family: Avenir;
   display: none;
-  right: -367px;
-  top:30px;
+  right: -307px;
+  top:-20px;
   position: absolute;
   background-color: white;
-  min-width: 160px;
+  min-width: 90px;
   height:auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -458,26 +480,24 @@ display: inline-block;
 
 .owner-png {
 
-position: absolute;
-width: 30px;
-height: 30px;
-left: 20px;
-top: 112px;
+position: relative;
+width: 40px;
+height: 40px;
+left: 290px;
+top: 110px;
 border-radius: 999px;
 
 }
 
 .add-card {
-position: absolute;
+position: relative;
 width: 342px;
-height: 160px;
+height: 150px;
 left: 18px;
-top: 348px;
-
+top: 100px;
 background: #FFFFFF;
 border: 1px dashed rgba(0, 0, 0, 0.2);
 border-radius: 10px;
-
 }
 
 .add-text {
@@ -587,7 +607,7 @@ color:#000000;
   visibility: hidden;
   z-index: 1;
   padding: 16px;
-  animation-duration: 5s;
+  animation-duration: 2s;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -625,5 +645,116 @@ color:#000000;
   }
 }
 
+.back-btn {
+position: absolute;
+width: 15px;
+height: 15px;
+left: 5px;
+top: 13px;
+}
+
+.time {
+
+position: absolute;
+height: 19px;
+left:80px;
+right: 0%;
+top: calc(72% - 19px/2 + 15.5px);
+
+font-family: Avenir;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+opacity: 0.4;
+
+}
+
+.time2 {
+
+  position: absolute;
+  height: 19px;
+  left:80px;
+  right: 0%;
+  top: calc(82% - 19px/2 + 15.5px);
+  
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  
+  color: #000000;
+  
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  
+  }
+
+  .post {
+    position: absolute;
+    height: 19px;
+    left:17px;
+    right: 0%;
+    top: calc(72% - 19px/2 + 15.5px);
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    
+    color: #000000;
+    
+    mix-blend-mode: normal;
+    opacity: 0.4;
+  
+  }
+
+  .mark {
+    position: absolute;
+    height: 19px;
+    left:17px;
+    right: 0%;
+    top: calc(52% - 19px/2 + 15.5px);
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    
+    color: #000000;
+    
+    mix-blend-mode: normal;
+    opacity: 0.4;
+
+  }
+
+
+  .update {
+
+    position: absolute;
+    height: 19px;
+    left:17px;
+    right: 0%;
+    top: calc(82% - 19px/2 + 15.5px);
+    
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    
+    color: #000000;
+    
+    mix-blend-mode: normal;
+    opacity: 0.4;
+
+  }
 
 

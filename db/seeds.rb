@@ -6,6 +6,19 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Board.create({title: '記事１' , content: 'あいうえお'})
-Board.create({title: '記事２' , content: 'かきくけこ'})
-Board.create({title: '記事３' , content: 'さしすせそ'})
+taro = User.create!(email: 'taros@example.com', password: 'password')
+hanako = User.create!(email: 'hanakos@example.com', password: 'password2')
+
+5.times do
+    taro.boards.create!(
+        title: Faker::Lorem.sentence(word_count: 5),
+        content: Faker::Lorem.sentence(word_count: 10)
+    )
+end
+
+5.times do
+    hanako.boards.create!(
+        title: Faker::Lorem.sentence(word_count: 5),
+        content: Faker::Lorem.sentence(word_count: 10)
+    )
+end

@@ -1,0 +1,14 @@
+%h2.notice2 Edit Board
+.container
+  %ul
+    - @board.errors.full_messages.each do |message|
+      %li= message
+  = form_with(model: @board, url: board_path(@board), method: 'put', local: true) do |f|
+    %div
+      = f.label :title,'Name',class:"label-name"
+      = f.text_field :title,class:"name-box"
+    %div
+      = f.label :content,'Description',class:"label-desc"
+      = f.text_area :content,class:"desc-box"
+    = f.submit 'Submit',class:"submit-btn"
+
