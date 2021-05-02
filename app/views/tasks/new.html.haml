@@ -1,0 +1,16 @@
+%h2.app-sub-title New Card
+.container
+  %ul
+    - @task.errors.full_messages.each do |message|
+      %li= message
+  = form_with(model: @task, url: board_tasks_path(@task.board),method: 'post', local: true) do |f|
+    %div
+      = f.label :title,'Name',class:"label-name"
+      = f.text_field :title,class:"name-box"
+    %div
+      = f.label :content,'Description',class:"label-desc"
+      = f.text_area :content,class:"desc-box"
+    %div
+      = f.label :deadline,'Deadline',class:"label-deadline"
+      = f.date_field :deadline, class:"deadline-box"
+    = f.submit 'Submit',class:"submit-btn"

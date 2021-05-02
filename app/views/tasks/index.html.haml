@@ -1,0 +1,8 @@
+%h2.app-sub-title
+  = @board.title
+- @tasks.each do |task|
+  = render 'task',task: task
+ 
+%div.add-card
+  %p.add-text
+    = link_to '+ Add new task' , new_board_task_path(@board)

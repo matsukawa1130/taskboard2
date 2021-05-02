@@ -22,13 +22,48 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   
-  has_many :boards,dependent: :destroy
+  has_many :boards, dependent: :destroy
+  has_many :tasks, dependent: :destroy
+  has_one :profile, dependent: :destroy
 
   def has_written?(board)
     boards.exists?(id: board.id)
   end
 
-  def display_name
-    self.email.split('@').first
+  def has_written?(task)
+    tasks.exists?(id: task.id)
   end
+
+  def display_name
+    profile&.nickname || self.email.split('@').first
+  end
+
+  def introduction
+    profile&.introduction
+  end
+
+  def age
+    profile&.age
+  end
+
+  def gender
+    profile&.gender
+  end
+
+  def birthday
+    profile&.birthday
+  end
+
+  def prepare_profile
+    profile || build_profile
+  end
+
+  def avatar_image
+    if profile&.avatar&.attached?
+      profile.avatar
+    else
+      'prof-avatar.png'
+    end
+  end
+
 end

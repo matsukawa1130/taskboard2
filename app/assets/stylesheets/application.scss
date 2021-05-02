@@ -1,6 +1,14 @@
-.boards {
+@import './board';
+@import './btn';
+@import 'form';
+@import 'link';
+@import 'profile';
+@import 'index';
+@import 'edit_prof';
+
+.app-title {
 position: absolute;
-width: 56px;
+width: 90px;
 height: 25px;
 left: 25px;
 top: 23px;
@@ -15,17 +23,16 @@ color: #000000;
 
 }
 
-.notice2 {
+.app-sub-title {
 position: absolute;
 height: 36px;
-width:300px;
+width:170px;
 left: 26px;
-right: 0%;
-top: calc(12% - 36px/2);
+top: 80px;
 
 font-family: Avenir;
 font-style: normal;
-font-weight: 800;
+font-weight: 800px;
 font-size: 26px;
 line-height: 36px;
 
@@ -33,317 +40,35 @@ color: #000000;
 
 }
 
-.style1 {
+.line {
 position: absolute;
 width: 375px;
 height: 1px;
-left: 0px;
 top: 58px;
-
-background: #000000;
-mix-blend-mode: normal;
-opacity: 0.1; 
-
-}
-
-.email {
-position: absolute;
-width: 362px;
-height: 25px;
-left: 26px;
-top: 161px;
-
-font-family: Avenir;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 25px;
-
-color: #000000;
-
-}
-
-.emailbox {
-position: absolute;
-width: 322px;
-height: 40px;
-left: 26px;
-right: 26px;
-top: 190px;
-
-background: #F4F4F4;
-border-radius: 10px;
-border:none;
-
-}
-
-.password {
-position: absolute;
-width: 120px;
-height: 25px;
-left: 26px;
-top: 253px;
-
-font-family: Avenir;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 25px;
-
-color: #000000;
-
-}
-
-.passwordbox {
-position: absolute;
-width: 322px;
-height: 40px;
-left: 26px;
-right: 26px;
-top: 285px;
-
-background: #F4F4F4;
-border-radius: 10px;
-border: none;
-
-}
-
-.pass-conf {
-position: absolute;
-width: 186px;
-height: 25px;
-left: 26px;
-top: 351px;
-
-font-family: Avenir;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 25px;
-
-color: #000000;
-
-}
-
-.pass-confbox {
-position: absolute;
-width: 322px;
-height: 40px;
-left: 26px;
-right: 26px;
-
-top: 385px;
-
-background: #F4F4F4;
-border-radius: 10px;
-border: none;
-
-}
-
-.submit-btn {
-position: absolute;
-width: 322px;
-height: 40px;
-left: 26px;
-right: 26px;
-top: 750px;
-
-background: #F8BD1C;
-border-radius: 4px;
-border: none;
-
-color: #FFFFFF;
-font-weight: 800;
-}
-
-.signin {
-position: absolute;
-width: 76px;
-height: 25px;
-left: 26px;
-top: 483px;
-
-font-family: Avenir;
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 25px;
-
-color: gray;
-
-}
-
-.signup {
-  position: absolute;
-  width: 76px;
-  height: 25px;
-  left: 26px;
-  top: 503px;
-  
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  
-  color: gray;
-  
-  }
-
-
-
-.remember {
-position: absolute;
-width: 300px;
-height: 25px;
-left: 26px;
-top: 383px;
-
-font-family: Avenir;
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 25px;
-
-color: gray;
+opacity: 0.3; 
 
 }
 
 .png {
 
-position: relative;
+position: absolute;
 width: 40px;
 height: 40px;
-left: 312px;
-top: 12px;
+left: 322px;
+top: -4px;
 border-radius: 999px;
 background: url(app/assets/images/prof-avatar.png);
 border-color: none;
 
 }
 
-.dropbtn {
-  border: none;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-  
-.dropdown-content {
-  font-family: Avenir;
-  display: none;
-  right: -367px;
-  top:60px;
-  position: absolute;
-  background-color: white;
-  min-width: 120px;
-  height:auto;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-  
-.dropdown-content a {
-  padding: 8px 16px;
-  text-decoration: none;
-  display: block;
-  color: black;
-}
-  
-.dropdown-content a:hover {
-  background-color: white;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.forgotpw {
-  position: absolute;
-  width: 350px;
-  height: 25px;
-  left: 26px;
-  top: 470px;
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 25px;
-  color: gray;
-
-}
-
-.login-btn {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  left: 280px;
-  top: 20px;
-  padding:10px;
-
-  background: 	#8AC75A;
-  border-radius: 4px;
-  border: none;
-
-  color: #FFFFFF;
-  font-weight: 600;
-  font-size: 16px;
-}
-
-.card {
-  position: relative;
-  width: 342px;
-  height: 161px;
-  left: 18px;
-  top: 105px;
-  margin-bottom:20px;
-  background: #F4F4F4;
-  border-radius: 10px;
-
-}
-
-.text {
-  position: absolute;
-  height: 25px;
-  left: 0%;
-  right: 80.79%;
-  top: calc(70% - 25px/2 - 12.5px);
-  
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 25px;
-  color: #000000;
-}
-
 .content {
-position: absolute;
-height: 19px;
-left: 0%;
-right: 0%;
-top: calc(50% - 19px/2 + 15.5px);
-
-font-family: Avenir;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 19px;
-
-color: #000000;
-
-mix-blend-mode: normal;
-opacity: 0.4;
-
-}
-
-.username {
-  position: absolute;
+  position: relative;
   height: 19px;
-  left: 30px;
+  left: 10%;
+  width:100%;
   right: 0%;
-  top: calc(52% - 19px/2 + 15.5px);
+  top: -24px;
   
   font-family: Avenir;
   font-style: normal;
@@ -355,243 +80,6 @@ opacity: 0.4;
   
   mix-blend-mode: normal;
   opacity: 0.4;
-
-}
-
-.btn-png {
-
-position: relative;
-width: 24px;
-height: 6px;
-left: 312px;
-top: -60px;
-
-}
-
-.board-btn {
-
-position: relative;
-display: inline-block;
-
-}
-
-.board-edit {
-  font-family: Avenir;
-  display: none;
-  right: -367px;
-  top:80px;
-  position: absolute;
-  background-color: white;
-  min-width: 160px;
-  height:auto;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.board-edit a {
-  padding: 8px 16px;
-  text-decoration: none;
-  display: block;
-  color: black;
-}
-  
-.board-edit a:hover {
-  background-color: white;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropbtn2 {
-  border: none;
-
-}
-
-.dropdown-content2 {
-  font-family: Avenir;
-  display: none;
-  right: -307px;
-  top:-20px;
-  position: absolute;
-  background-color: white;
-  min-width: 90px;
-  height:auto;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  border-radius: 10px;
-}
-
-.dropdown-content2 a {
-  padding: 8px 16px;
-  text-decoration: none;
-  display: block;
-  color: black;
-}
-  
-.dropdown-content2 a:hover {
-  background-color: white;
-}
-
-.dropdown:hover .dropdown-content2 {
-  display: block;
-}
-
-.title {
-  position: absolute;
-  height: 25px;
-  left: 5%;
-  width:100%;
-  right: 76.79%;
-  top: calc(35% - 25px/2 - 12.5px);
-  
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 25px;
-  /* identical to box height */
-  
-  
-  color: #000000;
-
-}
-
-.content {
-  position: absolute;
-  height: 19px;
-  left: 5%;
-  width:100%;
-  right: 0%;
-  top: calc(30% - 19px/2 + 15.5px);
-  
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  
-  color: #000000;
-  
-  mix-blend-mode: normal;
-  opacity: 0.4;
-
-}
-
-.owner-png {
-
-position: relative;
-width: 40px;
-height: 40px;
-left: 290px;
-top: 110px;
-border-radius: 999px;
-
-}
-
-.add-card {
-position: relative;
-width: 342px;
-height: 150px;
-left: 18px;
-top: 100px;
-background: #FFFFFF;
-border: 1px dashed rgba(0, 0, 0, 0.2);
-border-radius: 10px;
-}
-
-.add-text {
-position: absolute;
-height: 25px;
-left: 0.35%;
-right: 0.35%;
-top: calc(50% - 25px/2);
-
-font-family: Avenir;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 25px;
-/* identical to box height */
-
-text-align: center;
-
-color: #000000;
-  
-}
-
-.add-text a {
-text-decoration: none;
-color:#000000;
-
-}
-
-.container {
-
-}
-
-.name-box {
-  position: absolute;
-  width: 322px;
-  height: 40px;
-  left: 26px;
-  top: 190px;
-  
-  background: #F4F4F4;
-  border-radius: 10px;
-  border:none;
-
-}
-
-.desc-box {
-  position: absolute;
-  width: 322px;
-  height: 203px;
-  left: 26px;
-  top: 296px;
-  
-  background: #F4F4F4;
-  border-radius: 10px;
-  border:none;
-
-}
-
-.label-name {
-  position: absolute;
-  width: 49px;
-  height: 25px;
-  left: 26px;
-  top: 157px;
-  
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 25px;
-  /* identical to box height */
-  
-  
-  color: #000000;
-
-
-}
-
-.label-desc {
-  position: absolute;
-  width: 92px;
-  height: 25px;
-  left: 26px;
-  top: 263px;
-  
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 25px;
-  /* identical to box height */
-  
-  
-  color: #000000;
 
 }
 
@@ -599,8 +87,8 @@ color:#000000;
   position: fixed;
   top: 16px;
   font-size: 12px;
-  right: 16px;
-  width: 160px;
+  right: 50px;
+  width: 150px;
   background: white;
   -webkit-animation: fade-in-out;
   animation: fade-in-out;
@@ -645,116 +133,13 @@ color:#000000;
   }
 }
 
-.back-btn {
-position: absolute;
-width: 15px;
-height: 15px;
-left: 5px;
-top: 13px;
-}
-
-.time {
+.errormsg {
 
 position: absolute;
-height: 19px;
-left:80px;
-right: 0%;
-top: calc(72% - 19px/2 + 15.5px);
-
-font-family: Avenir;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 19px;
-
-color: #000000;
-
-mix-blend-mode: normal;
-opacity: 0.4;
+width: 350px;
+height: 25px;
+left: 25px;
+top: 120px;
+color:red;
 
 }
-
-.time2 {
-
-  position: absolute;
-  height: 19px;
-  left:80px;
-  right: 0%;
-  top: calc(82% - 19px/2 + 15.5px);
-  
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  
-  color: #000000;
-  
-  mix-blend-mode: normal;
-  opacity: 0.4;
-  
-  }
-
-  .post {
-    position: absolute;
-    height: 19px;
-    left:17px;
-    right: 0%;
-    top: calc(72% - 19px/2 + 15.5px);
-    
-    font-family: Avenir;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
-    
-    color: #000000;
-    
-    mix-blend-mode: normal;
-    opacity: 0.4;
-  
-  }
-
-  .mark {
-    position: absolute;
-    height: 19px;
-    left:17px;
-    right: 0%;
-    top: calc(52% - 19px/2 + 15.5px);
-    
-    font-family: Avenir;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
-    
-    color: #000000;
-    
-    mix-blend-mode: normal;
-    opacity: 0.4;
-
-  }
-
-
-  .update {
-
-    position: absolute;
-    height: 19px;
-    left:17px;
-    right: 0%;
-    top: calc(82% - 19px/2 + 15.5px);
-    
-    font-family: Avenir;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
-    
-    color: #000000;
-    
-    mix-blend-mode: normal;
-    opacity: 0.4;
-
-  }
-
-

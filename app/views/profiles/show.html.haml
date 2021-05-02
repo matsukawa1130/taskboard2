@@ -1,0 +1,49 @@
+%h2.app-sub-title Profile
+%div
+  = image_tag current_user.avatar_image,class:"prof-photo"
+%p.prof-label ◆Name
+%div.prof-text
+  = current_user.display_name
+%p.prof-label ◆Introduction
+%div.prof-text
+  = current_user.introduction
+%p.prof-label ◆Gender
+%div.prof-text
+  #{I18n.t("enum.genders.#{current_user.gender}")}
+%p.prof-label ◆Birthday(Age)
+%div.prof-text
+  #{current_user.birthday} (#{current_user.age})
+%p.prof-label ◆Subscription
+%div.prof-text
+  購読している
+%div.edit-btn
+  = link_to 'Edit Profile', edit_profile_path
+
+- current_user.boards.each do |board|
+  %div.cardp
+    - if board.user.present?
+      %p.markp @
+      %div.usernamep
+        = board.author_name
+    %div.titlep
+      = board.title 
+    %div.contentp
+      = board.content
+    %p.postp Posted:
+    %div.timep
+      = board.display_created_at
+    %p.updatep Updated:
+    %div.time2p
+      = board.display_updated_at
+    = image_tag board.user.avatar_image,class:'owner-pngp'
+  - if user_signed_in? && current_user.has_written?(board)
+    %div.dropdownp 
+      = image_tag 'Combined Shape.png',class:'btn-pngp'
+      %div.dropdown-contentp
+        %ul
+          %li
+            = link_to 'Edit' , edit_board_path(board)
+          %li 
+            = link_to 'Delete' , board_path(board),data: { method: 'delete', confirm: '本当に削除してもよろしいですか'}
+%hr.linep
+%h2.app-sub-title1 Your Boards

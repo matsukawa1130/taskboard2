@@ -1,27 +1,30 @@
 !!!
 %html
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
     %title Taskboard
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
-    %meta{:content => "width=device-width,initial-scale=1.0", :name => "viewport"}/
+    %meta{:content => "width=device-width,initial-scale=1.0", :name => "viewport"}
   %body
-  = link_to 'TaskBoards' , root_path,class:'boards'
-  %hr.style1
+  = link_to 'TaskBoards' , root_path,class:'app-title'
+  %hr.line
   - if user_signed_in?
     %div.dropdown
-      = image_tag 'prof-avatar.png',class:'png dropbtn'
+      = image_tag current_user.avatar_image,class:'png'
       %div.dropdown-content
         %ul
+          %li
+            = link_to 'Profile' , profile_path
           %li
             = link_to 'Sign out' , destroy_user_session_path, data:{ method: 'delete' }
           %li 
             = link_to 'Sign up' , new_user_registration_path
   - else
     = link_to 'Sign in' ,new_user_session_path,class:"login-btn"
+    = link_to 'Sign up' ,new_user_registration_path,class:"signup-btn"
   - if !current_page?(root_path)
     .back-btn
       = link_to :back do
@@ -31,4 +34,3 @@
       - flash.each do |key, value|
         %div{:class => key}= value
   = yield
-  

@@ -1,0 +1,31 @@
+%h2.app-sub-title Edit Profile
+.container
+  %ul
+    - @profile.errors.full_messages.each do |message|
+      %li.errormsg= message
+
+  = form_with(model: @profile, url: profile_path, method: 'put' , local: true) do |f|
+    %div
+      = f.label :avatar, '◇アバター', class:'edit-avatar-label'
+    %div
+      = f.file_field :avatar,class:'edit-avatar-box'
+    %div
+      = f.label :nickname, '◇ハンドルネーム', class:'edit-name-label'
+    %div
+      = f.text_field :nickname, class: 'edit-name-box'
+    %div
+      = f.label :introduction, '◇自己紹介', class: 'edit-intro-label'
+    %div
+      = f.text_area :introduction,class: 'edit-intro-box'
+    %div
+      = f.label :gender, '◇性別',class: 'edit-gender-label'
+    %div
+      = f.select :gender, Profile.genders.map { |k, v| [ I18n.t("enum.genders.#{k}"), k ] }, {}, { class: 'edit-gender-box'}
+    %div
+      = f.label :birthday, '◇生年月日',class: 'edit-birth-label'
+    %div
+      = f.date_field :birthday, class: 'edit-birth-box'
+    %div
+      = f.label :subscribed, '通知を受け取る',class: 'edit-subsc-label'
+      = f.check_box :subscribed,class:'edit-subsc-box'
+    = f.submit '保存', class: 'submit-btn'

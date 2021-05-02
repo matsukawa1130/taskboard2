@@ -22,6 +22,7 @@ gem 'hamlit'
 gem 'annotate'
 gem 'better_errors'
 gem 'binding_of_caller'
+gem 'aws-sdk-s3' , require: false
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -41,6 +42,7 @@ group :development, :test do
   gem 'rubocop-rails',require:false
   gem 'rubocop' ,require:false
   gem 'faker'
+  gem 'dotenv-rails'
 end
 
 group :development do
