@@ -1,4 +1,7 @@
 %div.cardi
+  - if task.eyecatch.attached?
+    %div.eyecatch
+      = image_tag task.eyecatch,class:"eyecatch-png"
   %p.marki @
   %div.usernamei
     = task.author_name
@@ -13,11 +16,15 @@
   %div.time2i
     = task.display_updated_at
   = image_tag task.user.avatar_image,class:'owner-png'
+  %div.comment
+    = image_tag 'message-square-outline.png',class:'comment-png'
   - if user_signed_in? && current_user.has_written?(task)
-  %div.dropdowni
-    = image_tag 'Combined Shape.png',class:'btn-pngi'
-      %div.dropdown-contenti
+  %div.dropdownt
+    = image_tag 'Combined Shape.png',class:'btn-pngt'
+      %div.dropdown-contentt
         %ul
+          %li
+            = link_to 'About' , board_task_path(@board, task)
           %li
             = link_to 'Edit' ,  edit_board_task_path(@board, task)
           %li

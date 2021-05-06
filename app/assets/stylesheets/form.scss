@@ -1,5 +1,5 @@
 .email {
-position: absolute;
+position: relative;
 width: 362px;
 height: 25px;
 left: 26px;
@@ -16,7 +16,7 @@ color: #000000;
 }
 
 .emailbox {
-position: absolute;
+position: relative;
 width: 322px;
 height: 40px;
 left: 26px;
@@ -30,7 +30,7 @@ border:none;
 }
 
 .password {
-position: absolute;
+position: relative;
 width: 120px;
 height: 25px;
 left: 26px;
@@ -47,7 +47,7 @@ color: #000000;
 }
 
 .passwordbox {
-position: absolute;
+position: relative;
 width: 322px;
 height: 40px;
 left: 26px;
@@ -61,7 +61,7 @@ border: none;
 }
 
 .pass-conf {
-position: absolute;
+position: relative;
 width: 186px;
 height: 25px;
 left: 26px;
@@ -78,7 +78,7 @@ color: #000000;
 }
 
 .pass-confbox {
-position: absolute;
+position: relative;
 width: 322px;
 height: 40px;
 left: 26px;
@@ -93,11 +93,11 @@ border: none;
 }
 
 .name-box {
-position: absolute;
+position: relative;
 width: 322px;
 height: 40px;
 left: 26px;
-top: 190px;
+top: 100px;
 
 background: #F4F4F4;
 border-radius: 10px;
@@ -106,11 +106,11 @@ border:none;
 }
 
 .desc-box {
-position: absolute;
+position: relative;
 width: 322px;
-height: 203px;
+height: 60px;
 left: 26px;
-top: 296px;
+top: 120px;
 
 background: #F4F4F4;
 border-radius: 10px;
@@ -118,12 +118,12 @@ border:none;
 
 }
 
-.label-name {
-position: absolute;
+.label-name2 {
+position: relative;
 width: 49px;
 height: 25px;
 left: 26px;
-top: 157px;
+top: 90px;
 
 font-family: Avenir;
 font-style: normal;
@@ -139,11 +139,11 @@ color: #000000;
 }
 
 .label-desc {
-position: absolute;
+position: relative;
 width: 92px;
-height: 25px;
+height: 15px;
 left: 26px;
-top: 263px;
+top: 120px;
 
 font-family: Avenir;
 font-style: normal;
@@ -158,11 +158,11 @@ color: #000000;
 }
 
 .label-deadline {
-position: absolute;
+position: relative;
 width: 92px;
 height: 25px;
 left: 26px;
-top: 530px;
+top: 150px;
 
 font-family: Avenir;
 font-style: normal;
@@ -177,11 +177,76 @@ color: #000000;
 
 .deadline-box {
 
-position: absolute;
+position: relative;
 width: 322px;
 height: 40px;
 left: 26px;
-top: 570px;
+top: 160px;
+
+background: #F4F4F4;
+border-radius: 10px;
+border:none;
+
+}
+
+.label-eyecatch {
+
+
+position: relative;
+width: 120px;
+height: 25px;
+left: 26px;
+top: 80px;
+
+font-family: Avenir;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+
+color: #000000;
+
+}
+
+.eyecatch-box {
+
+
+position: relative;
+width: 322px;
+height: 40px;
+left: 26px;
+top: 90px;
+border:none;
+
+}
+
+.label-cont {
+position: relative;
+width: 92px;
+height: 25px;
+left: 26px;
+top: 130px;
+
+font-family: Avenir;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
+
+.cont-box {
+
+position: relative;
+width: 322px;
+height: 140px;
+left: 26px;
+top: 140px;
 
 background: #F4F4F4;
 border-radius: 10px;
