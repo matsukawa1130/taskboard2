@@ -70,7 +70,7 @@ display: block;
 .card {
 position: relative;
 width: 342px;
-height: 171px;
+height: auto;
 left: 18px;
 top: 175px;
 background: #F4F4F4;
@@ -213,9 +213,6 @@ mix-blend-mode: normal;
 opacity: 0.4;
 
 }
-
-
-
 
 .title {
 position: relative;

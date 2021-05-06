@@ -5,6 +5,7 @@
 @import 'profile';
 @import 'index';
 @import 'edit_prof';
+@import 'about';
 
 .app-title {
 position: absolute;
@@ -37,6 +38,10 @@ font-size: 26px;
 line-height: 36px;
 
 color: #000000;
+
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
 
 }
 
@@ -141,5 +146,40 @@ height: 25px;
 left: 25px;
 top: 120px;
 color:red;
+
+}
+
+.eyecatch-png {
+
+position: relative;
+width: 300px;
+height: 150px;
+left: 11px;
+top: 15px;
+border: none;
+border-radius: 16px;
+
+}
+
+.comment-png {
+
+position: relative;
+width: 20px;
+height: 20px;
+left: 280px;
+top: -30px;
+
+}
+
+.show-eyecatch {
+
+position: relative;
+width: 335px;
+margin-left: 20px;
+margin-right:20px;
+height: auto;
+left: 0px;
+top: 100px;
+border-radius: 16px;
 
 }

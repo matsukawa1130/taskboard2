@@ -5,12 +5,23 @@
       %li= message
   = form_with(model: @task, url: board_task_path(@task),method: 'put', local: true) do |f|
     %div
-      = f.label :title,'Name',class:"label-name"
+      = f.label :eyecatch, 'Image',class:"label-eyecatch"
+    %div
+      = f.file_field :eyecatch,class:"eyecatch-box"
+    %div
+      = f.label :title,'Name',class:"label-name2"
+    %div
       = f.text_field :title,class:"name-box"
     %div
       = f.label :content,'Description',class:"label-desc"
+    %div
       = f.text_area :content,class:"desc-box"
     %div
+      = f.label :description,'Content',class:"label-cont"
+    %div
+      = f.text_area :description,class:"cont-box"
+    %div
       = f.label :deadline,'Deadline',class:"label-deadline"
+    %div
       = f.date_field :deadline, class:"deadline-box"
     = f.submit 'Submit',class:"submit-btn"

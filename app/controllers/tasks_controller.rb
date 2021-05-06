@@ -10,6 +10,13 @@ class TasksController < ApplicationController
       @task = board.tasks.build
     end
 
+    def show
+      @task = Task.find(params[:id])
+      @boards = Board.all
+      @board = Board.find(params[:board_id])
+      @tasks = @board.tasks
+    end
+
     def create
       board = Board.find(params[:board_id])
       @task = board.tasks.build(task_params.merge!(user_id: current_user.id))
@@ -44,6 +51,6 @@ class TasksController < ApplicationController
 
     private
     def task_params
-      params.require(:task).permit(:title, :content, :deadline)
+      params.require(:task).permit(:title, :content, :deadline, :eyecatch, :description)
     end
 end

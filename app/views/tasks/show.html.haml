@@ -1,0 +1,14 @@
+%h2.app-sub-title
+  = @task.title
+%div.eyecatch
+  = image_tag @task.eyecatch,class:"show-eyecatch"
+%div.description
+  = @task.description
+%div.dropdowns
+  = image_tag 'Combined Shape.png',class:'btn-pngs'
+  %div.dropdown-contents
+    %ul
+      %li
+        = link_to 'Edit' ,  edit_board_task_path(@board, @task)
+      %li
+        = link_to 'Delete' , board_task_path(@board, @task),data: { method: 'delete', confirm: '本当に削除しますか？'}

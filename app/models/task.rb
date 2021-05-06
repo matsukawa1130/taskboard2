@@ -2,14 +2,15 @@
 #
 # Table name: tasks
 #
-#  id         :bigint           not null, primary key
-#  content    :text
-#  deadline   :date
-#  title      :string
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
-#  board_id   :bigint           not null
-#  user_id    :bigint           not null
+#  id          :bigint           not null, primary key
+#  content     :text
+#  deadline    :date
+#  description :text
+#  title       :string
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  board_id    :bigint           not null
+#  user_id     :bigint           not null
 #
 # Indexes
 #
@@ -19,6 +20,8 @@
 class Task < ApplicationRecord
     belongs_to :board
     belongs_to :user
+    has_many :comments, dependent: :destroy
+    has_one_attached :eyecatch
 
     validates :title, presence: true
     validates :content, presence: true
