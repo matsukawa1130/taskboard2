@@ -3,7 +3,7 @@ position: relative;
 width: 362px;
 height: 25px;
 left: 26px;
-top: 161px;
+top: 101px;
 
 font-family: Avenir;
 font-style: normal;
@@ -21,7 +21,7 @@ width: 322px;
 height: 40px;
 left: 26px;
 right: 26px;
-top: 190px;
+top: 120px;
 
 background: #F4F4F4;
 border-radius: 10px;
@@ -34,7 +34,7 @@ position: relative;
 width: 120px;
 height: 25px;
 left: 26px;
-top: 253px;
+top: 148px;
 
 font-family: Avenir;
 font-style: normal;
@@ -52,7 +52,7 @@ width: 322px;
 height: 40px;
 left: 26px;
 right: 26px;
-top: 285px;
+top: 155px;
 
 background: #F4F4F4;
 border-radius: 10px;
@@ -65,7 +65,7 @@ position: relative;
 width: 186px;
 height: 25px;
 left: 26px;
-top: 351px;
+top: 191px;
 
 font-family: Avenir;
 font-style: normal;
@@ -84,7 +84,7 @@ height: 40px;
 left: 26px;
 right: 26px;
 
-top: 385px;
+top: 205px;
 
 background: #F4F4F4;
 border-radius: 10px;
@@ -105,6 +105,20 @@ border:none;
 
 }
 
+.name-boxn {
+
+position: relative;
+width: 322px;
+height: 40px;
+left: 26px;
+top: 110px;
+
+background: #F4F4F4;
+border-radius: 10px;
+border:none;
+
+    }
+
 .desc-box {
 position: relative;
 width: 322px;
@@ -117,6 +131,19 @@ border-radius: 10px;
 border:none;
 
 }
+
+.desc-boxn {
+position: relative;
+width: 322px;
+height: 240px;
+left: 26px;
+top: 200px;
+
+background: #F4F4F4;
+border-radius: 10px;
+border:none;
+    
+    }
 
 .label-name2 {
 position: relative;
@@ -138,6 +165,48 @@ color: #000000;
 
 }
 
+.label-name {
+
+position: relative;
+width: 49px;
+height: 25px;
+left: 26px;
+top: 20px;
+
+font-family: Avenir;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+
+
+color: #000000;
+
+
+}
+
+.label-namen {
+
+position: relative;
+width: 49px;
+height: 25px;
+left: 26px;
+top: 100px;
+
+font-family: Avenir;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+
+
+color: #000000;
+    
+    
+    }
+
 .label-desc {
 position: relative;
 width: 92px;
@@ -156,6 +225,26 @@ line-height: 25px;
 color: #000000;
 
 }
+
+
+.label-descn {
+position: relative;
+width: 140px;
+height: 15px;
+left: 26px;
+top: 170px;
+
+font-family: Avenir;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+
+
+color: #000000;
+    
+    }
 
 .label-deadline {
 position: relative;

@@ -1,7 +1,7 @@
 %h2.app-sub-title
   = @board.title
 - @tasks.each do |task|
-  = render 'task',task: task
+  = render 'task',task: task, comment: task.comments
  
 %div.add-card
   %p.add-text

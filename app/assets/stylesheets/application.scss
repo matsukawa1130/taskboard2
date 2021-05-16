@@ -6,6 +6,8 @@
 @import 'index';
 @import 'edit_prof';
 @import 'about';
+@import 'comment';
+
 
 .app-title {
 position: absolute;
@@ -149,12 +151,25 @@ color:red;
 
 }
 
+
+.errormsg2 {
+
+position: relative;
+width: 350px;
+height: 25px;
+left: 25px;
+top: 100px;
+color:red;
+font-size: 8px;
+
+  }
+
 .eyecatch-png {
 
 position: relative;
-width: 300px;
+width: 270px;
 height: 150px;
-left: 11px;
+left: 15px;
 top: 15px;
 border: none;
 border-radius: 16px;
@@ -177,9 +192,37 @@ position: relative;
 width: 335px;
 margin-left: 20px;
 margin-right:20px;
+margin-top: 40px;
 height: auto;
 left: 0px;
 top: 100px;
 border-radius: 16px;
+
+}
+
+body {
+
+margin: 0px,0px,0px,0px;
+
+}
+
+.wrapper {
+
+width:100%;
+height:100vh;
+
+}
+
+.container {
+
+width:100%;
+height:100vh;
+  
+}
+
+.container-new {
+
+width:100%;
+
 
 }

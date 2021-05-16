@@ -16,19 +16,19 @@ color: gray;
 }
 
 .signup {
-    position: absolute;
-    width: 76px;
-    height: 25px;
-    left: 26px;
-    top: 503px;
-    
-    font-family: Avenir;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    
-    color: gray;
+position: absolute;
+width: 76px;
+height: 25px;
+left: 26px;
+top: 503px;
+
+font-family: Avenir;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+
+color: gray;
     
     }
 
@@ -81,5 +81,25 @@ font-weight: 400;
 font-size: 18px;
 line-height: 25px;
 color: gray;
+
+}
+
+.sessionerror {
+
+color:red;
+font-size: 8px;
+position: relative;
+top:10px;
+left:20px;
+font-family: Avenir;
+
+
+}
+
+.errormsg {
+
+color:red;
+font-size: 8px;
+
 
 }
