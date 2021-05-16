@@ -1,0 +1,16 @@
+{
+    "name": "taskboard",
+    "description": "This is taskboard",
+    "keywords": [],
+    "website": "",
+    "repository": "https://github.com/matsukawa1130/taskboard2",
+    "env": {},
+    "addons": [
+      "heroku-postgresql:hobby-dev"
+    ],
+    "buildpacks": [{
+      "url": "heroku/nodejs"
+    }, {
+      "url": "heroku/ruby"
+    }]
+  }
