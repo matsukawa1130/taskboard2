@@ -1,31 +1,33 @@
-%div.cardi
+%div.cardt
   - if task.eyecatch.attached?
     %div.eyecatch
       = image_tag task.eyecatch,class:"eyecatch-png"
-  %p.marki @
-  %div.usernamei
-    = task.author_name
   %div.titlei
-    = task.title 
+    = task.title
   %div.contenti
     = task.content
-  %p.posti Posted:
-  %div.time1i
+  %div.markx
+    %p @
+  %div.usernamei
+    = task.author_name
+  %div.time1y
+    %p Posted:
+  %div.time1iy
     = task.display_created_at
-  %p.updatei Update:
-  %div.time2i
+  %div.time2y
+    %p Updated:
+  %div.time2iy
     = task.display_updated_at
-  = image_tag task.user.avatar_image,class:'owner-png'
-  %div.comment
-    = image_tag 'message-square-outline.png',class:'comment-png'
-  - if user_signed_in? && current_user.has_written?(task)
+  %div.comment_notice
+    = image_tag 'message-square-outline.png',class:'comment-notice2'
+    %span.comment_count
+      = task.comment_count
   %div.dropdownt
-    = image_tag 'Combined Shape.png',class:'btn-pngt'
-      %div.dropdown-contentt
-        %ul
-          %li
-            = link_to 'About' , board_task_path(@board, task)
-          %li
-            = link_to 'Edit' ,  edit_board_task_path(@board, task)
-          %li
-            = link_to 'Delete' , board_task_path(@board, task),data: { method: 'delete', confirm: '本当に削除しますか？'}
+    - if user_signed_in?
+      = image_tag 'Combined Shape.png',class:'btn-pngt'
+    %div.dropdown-contentt
+      %ul
+        %li
+          = link_to 'About' , board_task_path(@board, task)
+  - task.comments.each do |comment|
+    = image_tag comment.user.avatar_image,class:'owner-png'

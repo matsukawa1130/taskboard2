@@ -15,6 +15,7 @@ class TasksController < ApplicationController
       @boards = Board.all
       @board = Board.find(params[:board_id])
       @tasks = @board.tasks
+      @comments = @task.comments
     end
 
     def create

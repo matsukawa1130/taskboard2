@@ -1,12 +1,12 @@
-%div.container
+%div.container-new
   %ul
     - @board.errors.full_messages.each do |message|
       %li.errormsg= message
   = form_with(model: @board, url: boards_path, method: 'post', local: true) do |f|
     %div
-      = f.label :title,'Name',class:"label-name"
-      = f.text_field :title,class:"name-box"
+      = f.label :title,'Name',class:"label-namen"
+      = f.text_field :title,class:"name-boxn"
     %div
-      = f.label :content,'Description',class:"label-desc"
-      = f.text_area :content,class:"desc-box"
-    = f.submit 'Submit',class:"submit-btn"
+      = f.label :content,'Description',class:"label-descn"
+      = f.text_area :content,class:"desc-boxn"
+    = f.submit 'Submit',class:"submit-btnn"

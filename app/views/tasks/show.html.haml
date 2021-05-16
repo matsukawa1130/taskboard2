@@ -1,14 +1,22 @@
 %h2.app-sub-title
   = @task.title
-%div.eyecatch
-  = image_tag @task.eyecatch,class:"show-eyecatch"
-%div.description
-  = @task.description
 %div.dropdowns
-  = image_tag 'Combined Shape.png',class:'btn-pngs'
+  - if current_user.id == @task.user_id
+    = image_tag 'Combined Shape.png',class:'btn-pngs'
   %div.dropdown-contents
     %ul
       %li
         = link_to 'Edit' ,  edit_board_task_path(@board, @task)
       %li
         = link_to 'Delete' , board_task_path(@board, @task),data: { method: 'delete', confirm: '本当に削除しますか？'}
+%div.eyecatch
+  = image_tag @task.eyecatch,class:"show-eyecatch"
+%div.description
+  = @task.description
+%div.app-sub-titlec     
+  %p.app-sub-titlec Comment
+- @comments.each do |comment|
+  = render 'comment',comment: comment
+%div.add-cardc
+  %p.add-text
+    = link_to '+ Add new comment' , new_board_task_comment_path(@board,@task)

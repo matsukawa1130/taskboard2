@@ -1,20 +1,6 @@
 %div.cardi
-  %p.marki @
-  %div.usernamei
-    = board.author_name
-  %div.titlei
-    = board.title 
-  %div.contenti
-    = board.content
-  %p.posti Posted:
-  %div.time1i
-    = board.display_created_at
-  %p.updatei Update:
-  %div.time2i
-    = board.display_updated_at
-  = image_tag board.user.avatar_image,class:'owner-png'
-  - if user_signed_in?
   %div.dropdowni
+    - if user_signed_in? && current_user.has_written?(board)
     = image_tag 'Combined Shape.png',class:'btn-pngi'
       %div.dropdown-contenti
         %ul
@@ -24,6 +10,26 @@
             = link_to 'Edit' , edit_board_path(board)
           %li
             = link_to 'Delete' , board_path(board),data:{ method: 'delete', confirm: '本当に削除しますか？'}
-
- 
-      
+    - if user_signed_in? && !current_user.has_written?(board)
+    = image_tag 'Combined Shape.png',class:'btn-pngi'
+      %div.dropdown-contenti
+        %ul
+          %li
+            = link_to 'Task' , board_tasks_path(board)
+  %div.titlei
+    = board.title 
+  %div.contenti
+    = board.content
+  %div.markx
+    %p @
+  %div.usernamei
+    = board.author_name
+  %div.time1x
+    %p Posted:
+  %div.time1i
+    = board.display_created_at
+  %div.time2x
+    %p Updated:
+  %div.time2i
+    = board.display_created_at
+  = image_tag board.user.avatar_image,class:'owner-pngs'
