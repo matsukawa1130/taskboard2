@@ -23,6 +23,7 @@ gem 'annotate'
 gem 'better_errors'
 gem 'binding_of_caller'
 gem 'aws-sdk-s3' , require: false
+gem 'mimemagic', "~> 0.3.10"
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
